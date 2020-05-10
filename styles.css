@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/********** navbar ***********/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2c3e50;
+    width: 100%;
+}
+
+.center {
+    width: 80%;
+    margin: auto;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-left li, .nav-right li, .nav-left li a, .nav-right li a {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-left li, .nav-right li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+main {
+    padding-top: 10vh;
+}
+
+/******** jumbotron ********/
+
+#jumbotron {
+    width: 80%;
+    margin: 0 auto 25px auto;
+    background: #ecf0f1;
+    padding: 25px 100px 50px 100px;
+}
+
+.bigger {
+    font-size: 5rem;
+}
+
+.smaller {
+    font-size: 2rem;
+}
+
+/********** gallery *********/
+
+#gallery {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    max-width: 30%;
+    margin: 1.5%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/****** rwd ******/
+
+@media screen and (max-width: 1100px) {
+    .nav-left li, .nav-right li, .nav-left li a, .nav-right li a {
+        font-size: 1.5rem;
+    }
+
+    .bigger {
+        font-size: 3rem;
+    }
+
+    .smaller {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 46%;
+        margin: 1.5%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .center {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-left {
+        float: none;
+    }
+
+    .nav-right {
+        float: none;
+    }
+
+    .nav-left li, .nav-right li {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        padding-top: 30vh;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 1.5% 0;
+    }
+}
